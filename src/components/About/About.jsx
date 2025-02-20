@@ -1,5 +1,10 @@
 import React from 'react';
 import style from "./About.module.css"
+import img1 from "../../assets/images/10.jpg"
+import img2 from "../../assets/images/12.jpg"
+
+
+
 export default function About() {
   return (
     <div className="container mx-auto py-8 px-4">
@@ -7,7 +12,7 @@ export default function About() {
       
       <div className="flex flex-col md:flex-row items-center mb-8">
         <div className="md:w-1/2 mb-4 md:mb-0">
-          <img src="https://via.placeholder.com/600x400" alt="About Us" className="w-full rounded-lg shadow-md" />
+          <img src={img1}  alt="About Us" className="w-full rounded-lg shadow-md" />
         </div>
         <div className="md:w-1/2 md:pl-8">
           <p className="text-lg text-gray-700 mb-4">
@@ -58,7 +63,7 @@ export default function About() {
         <p className="text-lg text-gray-700 mb-4">
           Our team is made up of dedicated professionals who are passionate about what they do. We work hard to bring you the best products and services.
         </p>
-        <img src="https://via.placeholder.com/800x400" alt="Our Team" className="w-full rounded-lg shadow-md" />
+        <img src={img2} alt="Our Team" className="w-full rounded-lg shadow-md" />
       </div>
     </div>
   );
