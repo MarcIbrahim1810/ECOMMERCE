@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+  --shadow: rgba(145, 185, 171, .2) 0px 2px 4px -1px, rgba(145, 185, 171, .14) 0px 4px 5px 0px, rgba(145, 185, 171, .12) 0px 1px 10px 0px;
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+.btn{
+  @apply px-4 py-2 rounded-lg w-full text-white bg-green-600;
+}
+
+.row {
+  @apply flex flex-wrap px-4 py-8 items-center;
+}
+.rating-color {
+  color: var(--rating-color);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: solid 1px var(--main-color);
+}
+
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.category-img {
+  height: 200px;
+}
